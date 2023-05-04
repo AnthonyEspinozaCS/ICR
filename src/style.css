@@ -603,7 +603,12 @@
   
   object-fit: cover;
   object-position: right center;
+  border: 2px solid #333;
   border-radius: 50%;
+}
+
+.board__member:nth-of-type(even) img {
+	border-radius: 0;
 }
 
 .board__member h3 {
