@@ -96,37 +96,49 @@
               </li>
             </ul>
           </article>
-          <article id="board" class="about-us__board fs-medium flex">
+          <article id="board" class="about-us__board fs-550 flex">
             <h2 class="board__header fs-600 ff-sans-normal">Our Board</h2>
-            <div class="board__member">
+            <!--             <div class="board__member">
               <img src="/src/headshots/cletus.jpg" alt="Photo of chairman Cletus Glasener." />
-              <h3 class="board__name fs-550 ff-sans-normal">Cletus Glasener</h3>
+              <a onclick="bio(1)">
+                <h3 class="board__name fs-600 ff-sans-normal">Cletus Glasener</h3>
+              </a>
               <p>Chairman</p>
-              <button onclick="bio(1)" class="btn">Open Bio</button>
+            </div> -->
+            <div class="board__member">
+              <img src="/src/headshots/george.jpg" alt="Photo of Chairman George Knight." />
+              <a onclick="bio(2)">
+                <h3 class="board__name fs-600 ff-sans-normal">George Knight</h3>
+              </a>
+              <p>Chairman</p>
             </div>
             <div class="board__member">
-              <img src="/src/headshots/george.jpg" alt="Photo of CEO George Knight." />
-              <h3 class="board__name fs-550 ff-sans-normal">George Knight</h3>
+              <img src="/src/headshots/andi.jpg" alt="Photo of CEO George Knight." />
+              <a onclick="bio(6)">
+                <h3 class="board__name fs-600 ff-sans-normal">Andi Zaimi</h3>
+              </a>
               <p>CEO</p>
-              <button onclick="bio(2)" class="btn">Open Bio</button>
             </div>
             <div class="board__member">
               <img src="/src/headshots/dave.jpg" alt="Photo of CFO Dave Barron." />
-              <h3 class="board__name fs-550 ff-sans-normal">Dave Barron</h3>
+              <a onclick="bio(3)">
+                <h3 class="board__name fs-600 ff-sans-normal">Dave Barron</h3>
+              </a>
               <p>CFO</p>
-              <button onclick="bio(3)" class="btn">Open Bio</button>
             </div>
             <div class="board__member">
               <img src="/src/headshots/carlton.jpg" alt="Photo of Legal Advisor Carlton Chen." />
-              <h3 class="board__name fs-550 ff-sans-normal">Carlton Chen</h3>
+              <a onclick="bio(4)">
+                <h3 class="board__name fs-600 ff-sans-normal">Carlton Chen</h3>
+              </a>
               <p>Legal Advisor</p>
-              <button onclick="bio(4)" class="btn">Open Bio</button>
             </div>
             <div class="board__member">
               <img src="/src/headshots/robert.jpg" alt="Photo of Industry Expert Robert Jameson." />
-              <h3 class="board__name fs-550 ff-sans-normal">Robert Jameson</h3>
+              <a onclick="bio(5)">
+                <h3 class="board__name fs-600 ff-sans-normal">Robert Jameson</h3>
+              </a>
               <p>Industry Expert</p>
-              <button onclick="bio(5)" class="btn">Open Bio</button>
             </div>
           </article>
         </section>
@@ -189,6 +201,17 @@
           equity firms focused on the specialty chemical markets. Mr. Jamieson is a graduate of Texas A&M University, Class of 1987.
         </p>
         <button class="btn" onclick="bio(5)">Close</button>
+      </div>
+      <div id="bio-6" class="hidden bio ff-serif fs-mobile">
+        <button class="btn--x" onclick="bio(6)"></button>
+        <img src="/src/headshots/andi.jpg" alt="Photo of CEO Andi Zaimi" />
+        <h2 class="fs-600 bold ff-serif center">Andi Zaimi</h2>
+        <p class="justify">
+          Andi Zaimi, the dynamic CEO at Integrated Chemical Resources, collaborates with senior management to craft and implement strategies that guide the company's future. Previously a director at Actylis - Specialty Chemicals, he excelled in
+          sales, marketing, budgeting, risk management, efficiency measures, and customer satisfaction. As an accomplished professional, Andi leverages his B.S. in Chemical Engineering from the University of Connecticut to drive success in the
+          chemical industry. His forward-thinking approach will be instrumental in steering his team and organization toward growth and innovation.
+        </p>
+        <button class="btn" onclick="bio(6)">Close</button>
       </div>
     </main>
 
