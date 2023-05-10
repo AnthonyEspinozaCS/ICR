@@ -332,11 +332,6 @@
   }
   
   /* Navigation */
-  nav {
-	margin-left: auto;
-	display: none;
-  }
-
   .primary-navigation {
 	padding: 0;
 	margin: 0;
@@ -452,9 +447,6 @@
   }
   
   @media (min-width: 40em) {
-	nav {
-		display: block;
-	}
 	.primary-navigation {
 	  --gap: clamp(0.5rem, 1vw + 0.7rem, 3rem);
 	  padding-block: 2rem;
