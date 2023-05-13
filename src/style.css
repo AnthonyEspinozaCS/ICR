@@ -447,6 +447,10 @@
   }
   
   @media (min-width: 40em) {
+  nav {
+    margin-left: auto;
+  }
+
 	.primary-navigation {
 	  --gap: clamp(0.5rem, 1vw + 0.7rem, 3rem);
 	  padding-block: 2rem;
