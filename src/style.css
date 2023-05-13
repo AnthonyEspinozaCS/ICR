@@ -448,7 +448,7 @@
   
   @media (min-width: 40em) {
   nav {
-    margin-left: auto;
+    margin-left: none;
   }
 
 	.primary-navigation {
