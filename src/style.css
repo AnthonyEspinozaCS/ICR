@@ -677,6 +677,7 @@ button {
   width: calc(100% - 64px);
   height: fit-content;
   margin-right: 0.5rem;
+  padding-bottom: 0.75rem;
 
   font-size: var(--fs-550);
   font-weight: 700;
