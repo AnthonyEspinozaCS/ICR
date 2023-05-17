@@ -522,6 +522,7 @@ button {
 
 .about-us__article {
   flex-direction: column;
+  position: relative;
 }
 
 .about-us__article h2 {
@@ -629,6 +630,10 @@ button {
 }
 
 .article__geo-graphic {
+  position: relative;
+  width: 75%;
+  max-width: 768px;
+  margin: auto;
   padding: 1rem;
 }
 
@@ -710,7 +715,7 @@ button {
   width: min(90%, 1024px);
   margin: auto;
   padding: 2rem;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
 
