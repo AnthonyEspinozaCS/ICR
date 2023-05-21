@@ -615,6 +615,20 @@ figcaption {
   letter-spacing: 2px;
 }
 
+#contact-us {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contact-us h2 {
+  width: 100%;
+}
+
+.contact__left,
+.contact__right {
+  width: calc(50% - 1.75rem);
+}
+
 .about-us__board {
   flex-wrap: wrap;
   gap: 4rem;
