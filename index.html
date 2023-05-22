@@ -14,7 +14,6 @@
   </head>
   <body>
     <header class="primary-header flex" id="home">
-      <div class="header-pic"></div>
       <div class="header-logo">
         <a href="/index.html">
           <img src="/src/logo.png" class="logo" alt="Iluztró squid logo." />
@@ -31,10 +30,10 @@
             <a href="index.html" class="ff-sans-normal fs-nav text-black">Home</a>
           </li>
           <li class="">
-            <a href="#contact-us" class="ff-sans-normal fs-nav text-black">Contact Us</a>
+            <a href="/geo.html" class="ff-sans-normal fs-nav text-black">Geography</a>
           </li>
           <li class="">
-            <a href="/geo.html" class="ff-sans-normal fs-nav text-black">Sectors</a>
+            <a href="/invest.html" class="ff-sans-normal fs-nav text-black">Investment</a>
           </li>
           <li class="">
             <a href="/board.html" class="ff-sans-normal fs-nav text-black">Team</a>
@@ -214,7 +213,9 @@
             </div>
           </article> -->
           <article id="board" class="about-us__board fs-550 flex">
-            <h2 class="board__header fs-600 ff-sans-normal">Team</h2>
+            <div class="full">
+              <h2 class="board__header fs-600 ff-sans-normal">Team</h2>
+            </div>
             <!--             <div class="board__member">
               <img src="/src/headshots/cletus.jpg" alt="Photo of chairman Cletus Glasener." />
               <a onclick="bio(1)">
@@ -258,27 +259,13 @@
               <p class="center">Industry Expert</p>
             </div>
           </article>
-          <article class="about-us__article flex">
+          <article id="contact-us" class="about-us__article flex">
             <h2 class="calendar__header fs-600 ff-sans-normal">
               Have a business inquiry?
               <br />
-              Schedule an appointment below:
+              Contact our investment team
             </h2>
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/andizaimi/30min?hide_gdpr_banner=1&background_color=132350&text_color=fffefe&primary_color=ffffff" style="min-width: 100%; height: 800px; margin: 0 auto !important"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
-          </article>
-          <article id="contact-us" class="about-us__article flex">
-            <h2 class="fs-600 ff-sans-normal">Contact Us</h2>
-            <div class="contact__left">
-              <h3 class="fs-500 ff-sans-normal">Feel free to email us at:</h3>
-              <a class="fs-550 ff-serif text-accent-2" href="mailto:info@integratedchemicalresources.com">Click Here</a>
-            </div>
-            <div class="contact__right">
-              <h3 class="fs-500 ff-sans-normal">Or Call us at:</h3>
-              <a class="fs-550 ff-serif text-accent-2" href="tel:9175142570">+1(917)514-2570</a>
-            </div>
+            <a class="fs-550 ff-serif text-accent-2 contact" href="mailto:info@integratedchemicalresources.com">Click Here</a>
           </article>
         </section>
       </div>
@@ -289,8 +276,6 @@
         <a href="#home" class="footer__link"><img src="/src/logo.png" alt="AMR Dental Solution logos." class="footer__logo" /></a>
         <ul class="fs-medium text-white">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#board">Our Board</a></li>
         </ul>
       </section>
     </footer>

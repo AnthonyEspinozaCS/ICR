@@ -297,8 +297,7 @@ p {
 
   align-items: center;
   flex-wrap: wrap;
-  background: rgb(0, 11, 79);
-  background: var(--bg-gradient);
+  background-color: var(--white);
 }
 
 .mobile-nav-toggle {
@@ -347,7 +346,7 @@ a:hover {
 }
 
 .active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
 }
 
 .primary-navigation a {
@@ -357,12 +356,12 @@ a:hover {
 
 .primary-navigation a:visited,
 .primary-navigation a {
-  color: white;
+  color: black;
   margin: 0 0 1rem;
 }
 
 .primary-navigation a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
 }
 
 button {
@@ -371,7 +370,8 @@ button {
 }
 
 .header-logo {
-  filter: saturate(1000%);
+  padding-left: clamp(1rem, 2.5vw, 3rem);
+  filter: invert(1000%);
 }
 
 .header-pic {
@@ -481,8 +481,6 @@ button {
   left: 50%;
   transform: translateX(-50%);
 
-  box-shadow: 5px 5px 2px var(--blue);
-  border-radius: 0px 0px 5px 5px;
   filter: grayscale(25%);
 }
 
@@ -490,7 +488,6 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0px 0px 5px 5px;
 }
 
 .hero__p {
@@ -499,7 +496,6 @@ button {
   max-width: min(80rem, 95%);
   margin-inline: auto;
 
-  border-radius: 5px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 1) 100%);
   z-index: 1;
 }
@@ -516,8 +512,6 @@ button {
   padding: 4rem 2rem;
 
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px #333;
 }
 
 .about-us {
@@ -533,12 +527,13 @@ button {
 
 .about-us__article h2 {
   position: relative;
+  width: fit-content;
 }
 
 .about-us__article h2::after {
   content: " ";
   position: absolute;
-  width: 10rem;
+  width: 100%;
   height: 5px;
   bottom: -10px;
   left: 0;
@@ -615,18 +610,12 @@ figcaption {
   letter-spacing: 2px;
 }
 
-#contact-us {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+.contact {
+  width: fit-content;
+  padding-bottom: 3px;
+  text-decoration: none;
 
-#contact-us h2 {
-  width: 100%;
-}
-
-.contact__left,
-.contact__right {
-  width: calc(50% - 1.75rem);
+  border-bottom: 2px solid var(--dark);
 }
 
 .about-us__board {
@@ -638,9 +627,13 @@ figcaption {
   width: 100%;
 }
 
+.full {
+  width: 100%;
+}
+
 .board__header {
   position: relative;
-  width: 100%;
+  width: fit-content;
 }
 
 .board__member {
@@ -651,8 +644,6 @@ figcaption {
   padding: 2rem;
   position: relative;
 
-  border: 2px solid #333;
-  box-shadow: 4px 4px 2px #333;
   text-align: center;
 }
 
@@ -685,7 +676,7 @@ figcaption {
 .board__header::after {
   content: " ";
   position: absolute;
-  width: 10rem;
+  width: 100%;
   height: 5px;
   bottom: -10px;
   left: 0;
@@ -827,8 +818,18 @@ figcaption {
   width: fit-content;
 }
 
+.invest-list {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
 footer {
-  background: var(--bg-gradient);
+  background: var(--white);
 }
 
 .footer__section {
@@ -836,56 +837,49 @@ footer {
   justify-content: space-between;
   min-width: min(80rem, 95vw);
   margin-inline: auto;
+  padding: 1rem 0;
+  align-content: center;
 }
 
 .footer__logo {
   position: relative;
   width: 350px;
-  height: 250px;
+  height: 100px;
   margin-inline: auto;
+
+  filter: invert(100%);
   object-fit: contain;
-}
-
-.footer__section::after {
-  content: " ";
-  position: absolute;
-  width: calc(100vw / 4);
-  min-height: 100%;
-  top: 0;
-  right: 100%;
-
-  background-image: url(/src/chem.jpg);
-  background-size: cover;
-  opacity: 0.5;
 }
 
 footer ul {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
+  align-content: center;
   padding: 0;
+  margin: 0;
 }
 
 footer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
   list-style: none;
   text-align: center;
 }
 
 footer a {
-  font-size: var(--fs-600);
+  font-size: var(--fs-nav);
   font-family: var(--ff-sans-normal);
-  font-weight: 700;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 footer a:visited {
-  color: white;
+  color: black;
 }
 
 .footer__section li > a:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid black;
 }
 
 @media (max-width: 768px) {
