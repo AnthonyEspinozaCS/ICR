@@ -343,6 +343,7 @@ a:hover {
 
 .primary-navigation li {
   position: relative;
+  width: fit-content;
 }
 
 .active {
