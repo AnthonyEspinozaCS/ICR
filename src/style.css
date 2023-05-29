@@ -17,7 +17,7 @@
   --dark: #010006;
   --green: #00b800;
   --red: #ec0b43;
-  --blue: #132350;
+  --blue: #0abeff;
   --blue-2: #234296;
 
   --bg-gradient: linear-gradient(145deg, rgba(0, 11, 79, 1) 0%, rgba(0, 11, 79, 1) 40%, rgba(1, 0, 6, 1) 100%);
@@ -203,6 +203,9 @@ button {
 }
 .text-red {
   color: var(--red);
+}
+.text-blue {
+  color: var(--blue);
 }
 
 /* typography */
@@ -618,6 +621,7 @@ figcaption {
   padding-bottom: 3px;
   text-decoration: none;
 
+  color: var(--dark);
   border-bottom: 2px solid var(--dark);
 }
 
