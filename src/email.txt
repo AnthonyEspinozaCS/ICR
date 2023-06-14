@@ -1,0 +1,223 @@
+Delivered-To: aespinoza.cs@gmail.com
+Received: by 2002:a05:7300:c3aa:b0:c8:a8a2:8bae with SMTP id fx42csp71312dyb;
+        Wed, 31 May 2023 18:20:28 -0700 (PDT)
+X-Received: by 2002:a05:6402:26cb:b0:514:a566:103b with SMTP id x11-20020a05640226cb00b00514a566103bmr229606edd.19.1685582427745;
+        Wed, 31 May 2023 18:20:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1685582427; cv=none;
+        d=google.com; s=arc-20160816;
+        b=rAskr7jgblXkKcGPEbtd1I25F4b7S7/o7VlTGhABOk/NHcGoDM1flmLppwy+kFkpkr
+         jbO75HORVTCwEWv65Sg1UzNobYtmdzgNPCd3Byj2YTKILiBJNGA6ylb9aV95vafbhPkR
+         vDI5+C76lDsme/f5AR4OBjZIwNylgoHdaW71OOtGetw2Auv8KgZxwUAY9kIn7AuHDxNp
+         T3TsXVHrL03vvTRKhXhiWlzvf4e2osJwDqi4iCEviIYk5o/fyrLfWRb89aqOyck+nIj7
+         O7vK1CUbrDk6P0ytr97CZ5VI8Y0opnjS9GXC+HrUSyIb6mZJ7KnghimGlXdNpS3GmPYc
+         B7QQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=X6WbM02HX7uzDZV5MRBsf7aCPS2Ng/XbBqZRFtesiXg=;
+        b=SNP9bdqMZ89PeEgFmE534S97GLFYZqcdivLlysSAukqN7MpO6ovlA1TlQMRnhbIS3h
+         oukQ9clF34SlK+a1EOvKOJYn25mAcHzwjLLyYPHxCL8oq08G2o0CtKvy4V2o3BA9xwad
+         x6LkCQn7NTgwpp47VEfGIQ2XB/LQVRTvG5W3wV1yms2EpC7ueClqKAROHHRhQPRKmLwI
+         GqRvA3xCAQ0ohg0w5asY0mpOJ/PwbWwoqFKPjknj8EKcNetUeReRy48/vCvGc+sJjc+N
+         5Vb/kmli0x3Sdi2KRmEp3hdHLVKotipoVe3j7cb/4X8zSSqLMAaSJ8HJUHZFZqDYzRwm
+         8o9Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=i11AN+58;
+       spf=pass (google.com: domain of andizaimi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=andizaimi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <andizaimi@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id fj6-20020a0564022b8600b005145309f09esor194268edb.0.2023.05.31.18.20.27
+        for <aespinoza.cs@gmail.com>
+        (Google Transport Security);
+        Wed, 31 May 2023 18:20:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of andizaimi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=i11AN+58;
+       spf=pass (google.com: domain of andizaimi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=andizaimi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1685582427; x=1688174427;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=X6WbM02HX7uzDZV5MRBsf7aCPS2Ng/XbBqZRFtesiXg=;
+        b=i11AN+589WRwEdT2PUT5HLJ74y9u/Fdojk3JMnTBwEKGZ2TG/3ZST/TE1PRoug7ZWe
+         gsezwn6waqSo1NIdk+4WzvbCQLHI+iKqHUQ/3vHmvrbO4tKEsV6TieE4k+IV5KIFrJPZ
+         3PMRmkxVFFDavEdiXMiSuN7rbo/eRrxNMZ7VVNw+FvS0ZAuMQOnqxclvoWHBd6SrakSb
+         u5kyH2JVc2k4IpAnRAurM3fhN6S+jgPZp2nFlQ+vzTk5mHT+WGLKrD7AygM5yUfTsMUz
+         zMai6Tlj+qZpK3PJ3Fkoh2LJfTnZINMfcW4W9Mq61EgXxhK91zIK4Fj/upP7Gp8JKiQp
+         tJSg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1685582427; x=1688174427;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=X6WbM02HX7uzDZV5MRBsf7aCPS2Ng/XbBqZRFtesiXg=;
+        b=APnFmFqCBwSa96vUf3ZtHYak6I5/VuE3RdJUuYILtPNNmAmlhpDIEB50Nxg82R5Pgg
+         o60zRvQDgsrWyshXFa2osC/a6k+ZLn4R/3VOlJZ+Rs/Pkq0+M3JZ1v7H6wORVYvnEzse
+         bn0MFtYAovsap9wmH5psQpJnDQhgK4TNF1O4Xl61vyHgJK7gncLPlmZbfkEoXoCKzWbS
+         R209jT72QjdX4DJYHo5vzxHiQAZjV5kivghTfIJktzkbKIUBa6gEOwfb4Ikbh3iyxsQW
+         B2YzkcNCh/WnF20lMTORp+56649WafTVppdA1ZXDNNWUcIec+84mKozF1rNlfyaL1Gb4
+         qx4Q==
+X-Gm-Message-State: AC+VfDyp2cu6CemkA3DUJRQc5+nIhVG9vlqIKWZ4MWFDYFq9KItRbSXC 5SiDwUEKDFTwE9fxdjjDKafw4E8ZjyMe9p5Wu7U1eJyQ7zI=
+X-Google-Smtp-Source: ACHHUZ6gceHkqhtKcM+FxsQqAG8PeNJ3Iq6CyLxE0xnFIcyvJQi3DyaD1F3UEqMHsWqxeBJjzck9c/ZJZdG8yH6c6OA=
+X-Received: by 2002:aa7:d512:0:b0:513:fa61:397a with SMTP id y18-20020aa7d512000000b00513fa61397amr260846edq.12.1685582426614; Wed, 31 May 2023 18:20:26 -0700 (PDT)
+MIME-Version: 1.0
+References: <000501d99425$dff115c0$9fd34140$@ichemres.com> <1414756570.2898166.1685581965241@privateemail.com> <CAL9tqZGtU6LfAVbcU+mW2A2zLJ328rJa7Qi6+AVPXsnSeYH=Hw@mail.gmail.com> CAL9tqZGtU6LfAVbcU+mW2A2zLJ328rJa7Qi6+AVPXsnSeYH=Hw@mail.gmail.com <6477f208.050a0220.247b9.af49.GMR@mx.google.com>
+In-Reply-To: <6477f208.050a0220.247b9.af49.GMR@mx.google.com>
+From: Andi Zaimi <andizaimi@gmail.com>
+Date: Wed, 31 May 2023 21:20:15 -0400
+Message-ID: <CAL9tqZF1LdvW41LrpTxVLgH5OyuEBgAQ56zFs-5ipc-GdpXT-g@mail.gmail.com>
+Subject: Fwd: Delivery Status Notification (Failure)
+To: aespinoza.cs@gmail.com
+Content-Type: multipart/related; boundary="000000000000c7461c05fd073da7"
+
+--000000000000c7461c05fd073da7
+Content-Type: multipart/alternative; boundary="000000000000c7461a05fd073da6"
+
+--000000000000c7461a05fd073da6
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+it doesn't seem like i can send from my gmail to ichemres email
+
+---------- Forwarded message ---------
+From: Mail Delivery Subsystem <mailer-daemon@googlemail.com>
+Date: Wed, May 31, 2023 at 9:19=E2=80=AFPM
+Subject: Delivery Status Notification (Failure)
+To: <andizaimi@gmail.com>
+
+
+[image: Error Icon]
+Message not delivered
+Your message couldn't be delivered to *azaimi@ichemres.com* because the
+remote server is misconfigured. See technical details below for more
+information.
+The response from the remote server was:
+
+554 5.7.1 <azaimi@ichemres.com>: Relay access denied
+
+
+
+---------- Forwarded message ----------
+From: Andi Zaimi <andizaimi@gmail.com>
+To: Andi Zaimi <azaimi@ichemres.com>
+Cc:
+Bcc:
+Date: Wed, 31 May 2023 21:18:51 -0400
+Subject: check in
+check it
+
+On Wed, May 31, 2023 at 9:12=E2=80=AFPM Andi Zaimi <azaimi@ichemres.com> wr=
+ote:
+
+> test again
+>
+> On 05/31/2023 9:10 PM EDT azaimi@ichemres.com wrote:
+>
+>
+>
+> Yes sir
+>
+>
+
+--000000000000c7461a05fd073da6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">it doesn&#39;t=C2=A0seem like i can send from my gmail to =
+ichemres email=C2=A0<br><br><div class=3D"gmail_quote"><div dir=3D"ltr" cla=
+ss=3D"gmail_attr">---------- Forwarded message ---------<br>From: <strong c=
+lass=3D"gmail_sendername" dir=3D"auto">Mail Delivery Subsystem</strong> <sp=
+an dir=3D"auto">&lt;<a href=3D"mailto:mailer-daemon@googlemail.com">mailer-=
+daemon@googlemail.com</a>&gt;</span><br>Date: Wed, May 31, 2023 at 9:19=E2=
+=80=AFPM<br>Subject: Delivery Status Notification (Failure)<br>To:  &lt;<a =
+href=3D"mailto:andizaimi@gmail.com">andizaimi@gmail.com</a>&gt;<br></div><b=
+r><br><div class=3D"msg7305774387358126792">
+
+
+
+
+<div>
+<table cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-top:32px;backgr=
+ound-color:#ffffff"><tbody>
+<tr><td>
+<table cellpadding=3D"0" cellspacing=3D"0"><tbody>
+<tr><td style=3D"max-width:560px;padding:24px 24px 32px;background-color:#f=
+afafa;border:1px solid #e0e0e0;border-radius:2px">
+<img style=3D"padding:0 24px 16px 0;float:left" width=3D"72" height=3D"72" =
+alt=3D"Error Icon" src=3D"cid:1887489dadcd3f2f3341">
+<table style=3D"min-width:272px;padding-top:8px"><tbody>
+<tr><td><h2 style=3D"font-size:20px;color:#212121;font-weight:bold;margin:0=
+">
+Message not delivered
+</h2></td></tr>
+<tr><td style=3D"padding-top:20px;color:#757575;font-size:16px;font-weight:=
+normal;text-align:left">
+Your message couldn&#39;t be delivered to <a style=3D"color:#212121;text-de=
+coration:none"><b>azaimi@ichemres.com</b></a> because the remote server is =
+misconfigured. See technical details below for more information.
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr>
+<tr style=3D"border:none;background-color:#fff;font-size:12.8px;width:90%">
+<td align=3D"left" style=3D"padding:48px 10px">
+The response from the remote server was:<br>
+<p style=3D"font-family:monospace">
+554 5.7.1 &lt;<a href=3D"mailto:azaimi@ichemres.com" target=3D"_blank">azai=
+mi@ichemres.com</a>&gt;: Relay access denied
+</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<br><br><br>---------- Forwarded message ----------<br>From:=C2=A0Andi Zaim=
+i &lt;<a href=3D"mailto:andizaimi@gmail.com" target=3D"_blank">andizaimi@gm=
+ail.com</a>&gt;<br>To:=C2=A0Andi Zaimi &lt;<a href=3D"mailto:azaimi@ichemre=
+s.com" target=3D"_blank">azaimi@ichemres.com</a>&gt;<br>Cc:=C2=A0<br>Bcc:=
+=C2=A0<br>Date:=C2=A0Wed, 31 May 2023 21:18:51 -0400<br>Subject:=C2=A0check=
+ in<br><div dir=3D"ltr"><div>check it=C2=A0</div><br><div class=3D"gmail_qu=
+ote"><div dir=3D"ltr" class=3D"gmail_attr">On Wed, May 31, 2023 at 9:12=E2=
+=80=AFPM Andi Zaimi &lt;<a href=3D"mailto:azaimi@ichemres.com" target=3D"_b=
+lank">azaimi@ichemres.com</a>&gt; wrote:<br></div><blockquote class=3D"gmai=
+l_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,20=
+4,204);padding-left:1ex"><u></u>
+
+ =20
+  =20
+=20
+ <div>
+  <div>
+   test again=C2=A0
+  </div>=20
+  <blockquote type=3D"cite">=20
+   <div>
+    On 05/31/2023 9:10 PM EDT <a href=3D"mailto:azaimi@ichemres.com" target=
+=3D"_blank">azaimi@ichemres.com</a> wrote:
+   </div>=20
+   <div>
+    =C2=A0
+   </div>=20
+   <div>
+    =C2=A0
+   </div>=20
+   <div>=20
+    <p class=3D"MsoNormal">Yes sir</p>=20
+   </div>=20
+  </blockquote>
+ </div>
+</blockquote></div></div>
+</div></div></div>
+
+--000000000000c7461a05fd073da6--
+--000000000000c7461c05fd073da7
+Content-Type: image/png; name="icon.png"
+Content-Disposition: inline; filename="icon.png"
+Content-Transfer-Encoding: base64
+Content-ID: <1887489dadcd3f2f3341>
+X-Attachment-Id: 1887489dadcd3f2f3341
+
+
+--000000000000c7461c05fd073da7--
